@@ -2,7 +2,7 @@
 function getArea() {
 	const radiusInput = prompt('Enter the radius of the circle:');
 
-	if (radiusInput === null || radiusInput.trim() === '') {
+	if (radiusInput === null || radiusInput.trim() === '' || radiusInput.includes(' ')) {
 		console.log('Please, enter a radius of the circle.');
 		return;
 	}
