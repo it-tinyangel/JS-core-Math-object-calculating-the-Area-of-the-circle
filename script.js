@@ -9,7 +9,7 @@ function getArea() {
 
 	const radius = parseFloat(radiusInput);
 
-	if (isNaN(radius)) {
+	if (isNaN(radius) || radius <= 0) { 
 		console.log('Error: Please, enter a correct radius value of the circle.');
 	} else {
 		const area = calculateArea(radius);
